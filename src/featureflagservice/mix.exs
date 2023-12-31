@@ -54,11 +54,11 @@ defmodule Featureflagservice.MixProject do
       {:esbuild, "~> 0.8", runtime: Mix.env() == :dev},
       {:telemetry_metrics, "~> 0.6"},
       {:telemetry_poller, "~> 1.0"},
-      {:gettext, "~> 0.23"},
+      {:gettext, "~> 0.24"},
       {:jason, "~> 1.4"},
       {:plug_cowboy, "~> 2.6"},
 
-      {:grpcbox, "~> 0.16.0", override: true},
+      {:grpcbox, "~> 0.17.0", override: true},
       {:opentelemetry_exporter, "~> 1.6.0"},
       {:opentelemetry_grpcbox, "~> 0.2"},
       {:opentelemetry_api, "~> 1.2.1"},
