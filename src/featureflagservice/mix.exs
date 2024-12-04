@@ -46,13 +46,13 @@ defmodule Featureflagservice.MixProject do
       {:phoenix_ecto, "~> 4.4"},
       {:ecto_sql, "~> 3.10"},
       {:postgrex, "~> 0.17.2"},
-      {:phoenix_html, "~> 3.0"},
+      {:phoenix_html, "~> 4.0"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:phoenix_live_view, "~> 0.20.0"},
+      {:phoenix_live_view, "~> 1.0.0"},
       {:phoenix_view, "~> 2.0"},
       {:floki, "~> 0.35.0", only: :test},
       {:esbuild, "~> 0.8", runtime: Mix.env() == :dev},
-      {:telemetry_metrics, "~> 0.6"},
+      {:telemetry_metrics, "~> 1.0"},
       {:telemetry_poller, "~> 1.0"},
       {:gettext, "~> 0.23"},
       {:jason, "~> 1.4"},
@@ -63,7 +63,7 @@ defmodule Featureflagservice.MixProject do
       {:opentelemetry_grpcbox, "~> 0.2"},
       {:opentelemetry_api, "~> 1.2.1"},
       {:opentelemetry, "~> 1.3.0"},
-      {:opentelemetry_phoenix, "~> 1.1.1"},
+      {:opentelemetry_phoenix, "~> 2.0.0"},
       {:opentelemetry_ecto, "~> 1.1.1"}
     ]
   end
