@@ -540,7 +540,7 @@ services:
   # ******************
   # Postgres used by Feature Flag service
   ffs_postgres:
-    image: postgres:16.0
+    image: postgres:17.2
     container_name: postgres
     user: postgres
     deploy:
@@ -630,7 +630,7 @@ services:
 
   # Grafana
   grafana:
-    image: grafana/grafana:10.2.0
+    image: grafana/grafana:11.5.0
     container_name: grafana
     deploy:
       resources:
@@ -669,7 +669,7 @@ services:
 
   # Prometheus
   prometheus:
-    image: quay.io/prometheus/prometheus:v2.47.2
+    image: quay.io/prometheus/prometheus:v3.1.0
     container_name: prometheus
     command:
       - --web.console.templates=/etc/prometheus/consoles
@@ -865,7 +865,7 @@ services:
       retries: 60
 
   tracetest-postgres:
-    image: postgres:16.0
+    image: postgres:17.2
     container_name: tracetest-postgres
     profiles:
       - tests
